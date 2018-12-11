@@ -149,7 +149,7 @@
 
         <div class="row no-gutters">
           <div class="col-lg-6">
-            <a class="portfolio-item" href="https://zmerhe2.github.io/Project-1/">
+            <a class="portfolio-item" href="https://zmerhe2.github.io/Project-1/" target="_blank">
               <span class="caption">
                 <span class="caption-content">
                   <h2>Project-1</h2>
@@ -160,7 +160,7 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="https://zmerhe2.github.io/it202-project2/" target="_blank">
               <span class="caption">
                 <span class="caption-content">
                   <h2>Project 2</h2>
@@ -171,7 +171,7 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="https://zmerhe2.github.io/it202-project3/" target="_blank">
               <span class="caption">
                 <span class="caption-content">
                   <h2>Project 3</h2>
@@ -182,11 +182,11 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="https://zmerhe2.github.io/FinalProject/" target="_blank">
               <span class="caption">
                 <span class="caption-content">
                   <h2>Big Project</h2>
-                  <p class="mb-0">Final IT202 Project.</p>
+                  <p class="mb-0">An anime app utilizing the Studio Ghibli API.</p>
                 </span>
               </span>
               <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
@@ -196,23 +196,19 @@
       </div>
     </section>
 
-    <!-- Call to Action -->
-    <!--<section class="content-section bg-primary text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-        <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-        <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
-      </div>
-    </section>-->
+    <script>
+      /**
+        * load screen content via AJAX
+        * @function
+        * @param {string} screenName - name to load, without _
+        */
+        function loadScreen(screenName) {
+          $("#content").load("./_" + screenName + ".html", function () {
+            console.log("------ Screen load: " + screenName);
+        });
 
-    <!-- Map -->
-    <!--<section id="contact" class="map">
-      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-      <br/>
-      <small>
-        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-      </small>
-    </section>-->
+        }
+    </script>
 
     <!-- Footer -->
     <footer class="footer text-center">
